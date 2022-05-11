@@ -89,7 +89,7 @@ main
 {
   margin-top: 50px;
   width: 70%;
-  height: 80%;
+  height: 800px;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
   color: black;
@@ -101,10 +101,11 @@ main
 .contentFocus
 {
   width: 80%;
-  height: 90%;
+  height: 700px;
   text-align: center;
   display: flex;
   flex-direction: column;
+
 }
 
 .headerText
@@ -116,94 +117,93 @@ main
   line-height: 1.2;
   font-family: 'Times New Roman', serif;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 
-.secondPart
-{
-
-  background-color: #6c757d;
-  color: #fff;
-  display: flex;
-  flex-direction: row;
-  font-size: 23px;
-  font-weight: 300;
-  line-height: 1.2;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.venueDisplay
-{
-  border: 1px solid;
-
-}
-
-.playerNumber
-{
-  border: 1px solid;
-}
-
-/* duration set up */
-
-.Partthree
-{
-  display: flex;
-  flex-direction: row;
-  color: white;
-  line-height: 1.42857143;
-  font-size: 16px;
-  font-weight: 400;
-
-}
-
-.Thelable
-{
-  font-family: 'Lato', sans-serif;
-  flex: 50%;
-  font-size: 30px;
-}
-.DurationSetup
-{
-  flex: 50%;
-  display: grid;
-  grid-template-columns: 10px auto 10px;
-  background-color: #2196F3;
-  padding: 40px;
-}
-.DurationSetup input
-{
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  font-size: 30px;
-  text-align: center;
-
-}
-
-
-.inputDate
-{
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
-/* duration set up */
 
 .dynamicCalender
 {
-  margin-top: 50px;
+  overflow: auto;
+  margin-top: 5px;
   background-color: #fff;
   height: 700px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+
 }
 
-.dynamicCalender td {
+
+.dynamicCalender h3 {
   text-align: center;
+  border-bottom: 1px solid grey;
+  padding: 20px;
+  color: rgb(50 50 51);
+
+  font-weight: 500;
+  line-height: 1.1;
+  box-sizing: border-box;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: Avenir-Heavy,PingFang SC,Helvetica Neue,Arial,sans-serif;
+}
+
+
+.dynamicCalender div
+{
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-weight: 400;
+  font-size: 15px;
+  box-sizing: border-box;
+
+}
+
+.informationDispaly
+{
+  position: fixed;
+  width: 100px;
+  top: 100px;
+  left: 0;
+  border: 3px solid #73AD21;
+
+  
+}
+
+.informationDispaly
+{
+  padding: 2em 2em;
+  -webkit-border-radius: 8px/7px; 
+  -moz-border-radius: 8px/7px; 
+  border-radius: 8px/7px; 
+  background-color: #ebebeb; 
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+  border: solid 1px #cbc9c9;
+  color: #3a57af;
+  font-family: cursive;
+}
+
+.form{
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.form input
+{
+    text-align: center;
+}
+
+
+footer>div>a{
+  margin: right 20px;;
+  color: white;
+}
+
+footer>div>p{
+  color: white;
 }
 
 footer{
@@ -220,14 +220,5 @@ footer{
 
 footer>div{
   margin-right: 100px;;
-  color: white;
-}
-
-footer>div>a{
-  margin: right 20px;;
-  color: white;
-}
-
-footer>div>p{
   color: white;
 }

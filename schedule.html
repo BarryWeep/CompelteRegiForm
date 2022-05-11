@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./css/SchedulePage.css">
+  <script>
+    let a = "asdasd";
+  </script>
 </head>
 <body>
   <nav>
@@ -21,51 +24,86 @@
     </div>
   </nav>
     <main>
+    <div class="informationDispaly">
+      <img src="img/GolfRelated.jpg" width="50px" style="margin-left: 15px;">
+        <form id="survey-form">
+          <label id="name-label">Location</label>
+          <input type="text" class="form" value="Golfplace Inn" disabled><br>
+          <label id="name-label">Venue</label>
+          <input type="text" class="form" value="Similator One" disabled><br>
+          <label id="email-label">Player</label>
+          <input type="text" class="form" value="1" disabled ><br>
+          <label id="number-label">Duration</label>
+          <input type="time"  class="form"  required><br><!---number-->
+          <label id="number-label">Date</Select></label>
+          <input type="date"  class="form"required><br><!---number-->
+        </form>
+      </div>
       <div class="obscurebg">
         <div class="contentFocus">
           <div class="headerText">
             <h1>Schedule Appointment</h1>
           </div>
-          <div class="secondPart">
-            <div class="venueDisplay">
-              <lable>Venue :</lable>
-              <a>Golfplace Inn Simulator One</a>
-            </div>
-            <div class="playerNumber">
-              <img src="img/player.png" alt="Girl in a jacket"  height="50">
-            </div>
-          </div>
-          <div class="Partthree">
-            <div class="Thelable">
-            CHOSEN DATE:
-            </div>
-            <div class="DurationSetup">
-              <div class="inputDate">&lt</div>
-              <div class="inputdisplay">15/05/2002</div>
-              <div class="inputDate">&gt</div>
-            </div>
-          </div>
-          <div class="dynamicCalender">
-            <table>
-              <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country</th>
-              </tr>
-              <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-              </tr>
-              <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
-              </tr>
-            </table>
+          <div class="dynamicCalender" id="dynmaicCalendar">
+            <!--
+          <h3>MONDAY</h3>
+          <h3>TUESDAY</h3>
+          <h3>WEDNESDAY</h3>      
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          <div>sadasd</div>
+          -->
           </div>
         </div>
       </div>
+      <!-- start time end time confirmation
+      <div class="informationConfirmation">
+        <img src="img/GolfRelated.jpg" width="50px" style="margin-left: 15px;">
+          <form id="survey-form">
+            <label id="name-label">Location</label>
+            <input type="text" class="form" value="Golfplace Inn" disabled><br>
+            <label id="name-label">Venue</label>
+            <input type="text" class="form" value="Similator One" disabled><br>
+            <label id="email-label">Player</label>
+            <input type="text" class="form" value="1" disabled ><br>
+            <label id="number-label">Duration</label>
+            <input type="time"  class="form"  required><br>
+            <label id="number-label">Date</Select></label>
+            <input type="date"  class="form"required><br>
+          </form>
+    </div>
+    -->
     </main>
     <footer>
       <div>
@@ -81,5 +119,6 @@
         Site By : <a href="https://www.linkedin.com/in/chencan-wang/">Barry Wang</a>
       </div>
     </footer>
+    <script src="js/OverallJS.js"> </script>
 </body>
 </html>
