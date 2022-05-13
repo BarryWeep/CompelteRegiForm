@@ -160,6 +160,8 @@ main
 
 }
 
+
+
 .informationDispaly
 {
   position: fixed;
@@ -167,12 +169,6 @@ main
   top: 100px;
   left: 0;
   border: 3px solid #73AD21;
-
-  
-}
-
-.informationDispaly
-{
   padding: 2em 2em;
   -webkit-border-radius: 8px/7px; 
   -moz-border-radius: 8px/7px; 
@@ -194,6 +190,37 @@ main
 .form input
 {
     text-align: center;
+}
+
+
+
+.informationupdate
+{
+  position: fixed;
+  width: 100px;
+  top: 100px;
+  right: 0;
+  border: 3px solid #73AD21;
+  padding: 2em 2em;
+  -webkit-border-radius: 8px/7px; 
+  -moz-border-radius: 8px/7px; 
+  border-radius: 8px/7px; 
+  background-color: #ebebeb; 
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+  border: solid 1px #cbc9c9;
+  color: #3a57af;
+  font-family: cursive;
+}
+
+.informationupdate input[type=submit]
+{
+    background-color: #3a57af;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;;
 }
 
 
