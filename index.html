@@ -51,21 +51,24 @@
                 </div>
                 <div class="leftPart">
                   <label>DURATION</label>
+                  <span class="hovertext" data-hover="maximum duration is 3 hours per reservation">
                   <select class="DURATION" name="" id="">
                     <option value="1">30 mins</option>
                     <option value="2">60 mins</option>
                     <option value="3">90 mins</option>
                     <option value="4">120 mins</option>
                     <option value="5">150 mins</option>
+                    <option value="5">180 mins</option>
                   </select>
+                </span>
                 </div>
               </div>
               <div class="DateDiv">
                 <label>DATE</label>
-                <input class="DatePicker"type="date">
+                <input class="DatePicker"type="date" id="Pick_a_date" onchange="CalenderValueUpdate()">
               </div>
               <a href="./schedule.html">
-                <button id="submit_Information" class="submit_Information">Schedule My Reservation</button>
+                <button id="submit_Information" onclick="locationStorageAdd()" class="submit_Information">Schedule My Reservation</button>
              </a>
             </div>
           </div>
@@ -85,5 +88,7 @@
         Site By : <a href="https://www.linkedin.com/in/chencan-wang/">Barry Wang</a>
       </div>
     </footer>
+    <script src="js/model.js"> </script>
+    <script src="js/indexRender.js"> </script>
 </body>
 </html>
