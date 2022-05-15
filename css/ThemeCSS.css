@@ -130,10 +130,6 @@ main
   align-items: center;
   flex-direction: column;
   font-size: 16px;
-<<<<<<< HEAD
-=======
-  text-transform: uppercase;
->>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
   font-weight: 400;
   font-family: 'Lato', sans-serif;
   color: rgb(218, 216, 216);
@@ -172,11 +168,7 @@ div label
   font-size: 20px;
   border-radius: 5px;
   box-sizing: border-box;
-<<<<<<< HEAD
   margin-left: 40px;
-=======
-  margin-left: 30px;
->>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
   text-align: center;
 }
 
@@ -189,11 +181,7 @@ div label
   font-size: 20px;
   border-radius: 5px;
   vertical-align: middle;
-<<<<<<< HEAD
   margin-left: 45px;
-=======
-  margin-left: 30px;
->>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
   text-align: center;
 }
 
@@ -208,10 +196,6 @@ div label
   display: block;
   padding: 10px 105px;
   font-size: 15px;
-<<<<<<< HEAD
-=======
-  text-transform: uppercase;
->>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
   font-weight: 400;
   font-family: 'Lato', sans-serif;
 }
@@ -224,11 +208,7 @@ div label
   padding: 25px 40px;
   text-decoration: none;
   cursor: pointer;
-<<<<<<< HEAD
   margin-top: 60px;
-=======
-  margin-top: 100px;
->>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
   border-radius: 9px;
   font-size: 15px;
 
@@ -281,11 +261,7 @@ footer>div>p{
 
   position: absolute;
   z-index: 1;
-<<<<<<< HEAD
   left: 160px;
-=======
-  left: 140px;
->>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
   top: 00px;;
 }
 
@@ -305,12 +281,9 @@ footer>div>p{
   {
     width: 478px;
   }
-<<<<<<< HEAD
 
   .submit_Information
   {
      margin-top: 20px;
   }
-=======
->>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
 }

@@ -1,5 +1,4 @@
 // Model : contain all the code that saves and mananges data
-<<<<<<< HEAD
 
 let Userlist = [
   {
@@ -99,24 +98,12 @@ let reserved_intervals_Time_rowThree=["07:00 AM","07:30 AM","08:00 AM","08:30 AM
 let AddclassList = ["col-1","col-2","col-3"];
 
 
-=======
-let reference_userlist = [];
-  
-let weekdaylist = ["SUNDAY","MONDAY"," TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
-let intervals_Time = ["07:00 AM","07:30 AM","08:00 AM","08:30 AM","09:00 AM","09:30 AM","10:00 AM","10:30 AM","11:00 AM","11:30 AM","12:00 PM","12:30 PM","01:00 PM","01:30 PM","02:00 PM","02:30 PM","03:00 PM","03:30 PM","04:00 PM","04:30 PM","05:00 PM","05:30 PM","06:00 PM","06:30 PM","07:00 PM","08:30 PM","09:00 PM","09:30 PM","10:00 PM"];
-let AddclassList = ["col-1","col-2","col-3"];
-
-
-
-
->>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
 ///// calculating duration
 let inputStartEndValue = [];
 let compaireTwoValue = [];
 let startEndCounter = 0;
 
 
-<<<<<<< HEAD
 let PreDate = 0;
 let PostDate = 0;
 let currentDate=0;
@@ -126,17 +113,10 @@ function RetrieveDataLocalStorage()
   
   var storedNames = JSON.parse(localStorage.getItem("sx$qwes42"));
   Userlist = storedNames;
-=======
-
-function RetrieveDataLocalStorage()
-{
-
->>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
   //reference_userlist = JSON.Parse(window.localStorage.getItem("sx$qwes42"));
 
 }
 
-<<<<<<< HEAD
 function InitialPage()
 {
   //reference the player location venue play date from previous page
@@ -180,15 +160,12 @@ function GetWeekDate()
 
   return dt.getDay();
 }
-=======
->>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
 
 
 
 //View contains all the code that manages Visuals
 function renderTheList()
 {
-<<<<<<< HEAD
     
     let DayParameter=GetWeekDate();
     // render the list
@@ -256,12 +233,6 @@ function renderTheList()
       if(DayParameter==7) DayParameter=1;else DayParameter++;
 
 
-=======
-    for(let initor = 0; initor<3; initor++)
-    {
-      let headthree = document.createElement("h3");
-      headthree.innerHTML = weekdaylist[initor];
->>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
       if(initor==1)
       {
         headthree.style.background="rgba(130,130,130,0.3)";
@@ -269,37 +240,23 @@ function renderTheList()
       document.getElementById("dynmaicCalendar").appendChild(headthree);
 
     }
-<<<<<<< HEAD
 
     renderReservedbook();
     sub_renderTheTime();
     ////test
 
     
-=======
-    sub_renderTheTime();
-
-    //reference the player location venue play date from previous page
-
-
-    document.getElementById("referenceDate").value = reference_userlist[0].date;
-
->>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
 }
 
 function sub_renderTheTime()
 {
-<<<<<<< HEAD
   
 
-=======
->>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
   for(let row_counter_two = 0; row_counter_two<intervals_Time.length;row_counter_two++)
   {
     for(let row_create = 0; row_create<3; row_create++)
     {
       let bodydiv= document.createElement("div");
-<<<<<<< HEAD
 
 
       if(row_create==0)
@@ -392,9 +349,6 @@ function sub_renderTheTime()
       
       /*
       // create div and its style
-=======
-      bodydiv.innerHTML = intervals_Time[row_counter_two];
->>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
       if(row_create==1)
       {
         bodydiv.style.background="rgba(130,130,130,0.3)";
@@ -406,18 +360,13 @@ function sub_renderTheTime()
       bodydiv.style.cursor ="pointer";
       bodydiv.classList.add(AddclassList[row_create]);
       //bodydiv.onclick = function(){showUp()};
-<<<<<<< HEAD
 
       document.getElementById("dynmaicCalendar").appendChild(bodydiv);
       */
-=======
-      document.getElementById("dynmaicCalendar").appendChild(bodydiv);
->>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
 
     }
 
   }
-<<<<<<< HEAD
 }
 
 function  renderReservedbook()
@@ -733,58 +682,6 @@ theTimeTable.addEventListener('click', e=> {
       {   // third time click
         previous_click="";
         showPopup();
-=======
-
-
-}
-
-
-/// change the start time and end time display 
-
-const theTimeTable = document.querySelector(".dynamicCalender");
-
-theTimeTable.addEventListener('click', e=> {
-
-  if(e.target.matches('div'))
-  {
-      if(startEndCounter==0)
-      {
-          document.getElementById("StartTime").value=e.target.innerHTML;
-          inputStartEndValue[0] = e.target.innerHTML;
-          startEndCounter++;
-      }
-      else if(startEndCounter==1)
-      {
-        document.getElementById("EndTime").value=e.target.innerHTML;
-        startEndCounter++;
-        inputStartEndValue[1] = e.target.innerHTML;
-        startEndCounter=0;
-
-        // get duration value;
-        for(let durationInital = 0; durationInital<29; durationInital++)
-        {
-          if(compaireTwoValue.length<2)
-          {
-             if(inputStartEndValue[0]==intervals_Time[durationInital])
-             {
-               compaireTwoValue[0] = durationInital;
-             }
-             else if (inputStartEndValue[1]==intervals_Time[durationInital])
-             {
-               compaireTwoValue[1] = durationInital;
-             }
-          }
-          else
-          { 
-              let durationValue = (compaireTwoValue[1]-compaireTwoValue[0])*30;
-              let Stringvalue =  durationValue.toString() + " mins";
-              document.getElementById("duration").value = Stringvalue;
-              compaireTwoValue=[];
-          }
-        }
-      }
-      else{
->>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
         startEndCounter=0;
       }
   }
@@ -793,7 +690,6 @@ theTimeTable.addEventListener('click', e=> {
 });
 
 
-<<<<<<< HEAD
 function adjustdate()
 {
 
@@ -820,12 +716,4 @@ function UpdateDataTolocate()
 //run
 RetrieveDataLocalStorage();
 InitialPage();
-=======
-
-//Controller
-
-
-RetrieveDataLocalStorage();
-renderTheList();
->>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
 

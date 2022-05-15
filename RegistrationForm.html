@@ -32,19 +32,17 @@
         <div class="obscurebg">
           <div class="centerCotent">
             <div class="headerTitle">Personal Information Registration</div>
-            <div class="InputForm">
+            <form class="InputForm" action="index.html">
               <label>First Name</label>
-              <input type="text" class="VENUE_one" name="fname" id="fname">
+              <input type="text" class="VENUE_one" name="fname" id="fname" required>
               <label>Last Name</label>
-              <input type="text" class="VENUE_one" name="lname" id="lname">
+              <input type="text" class="VENUE_one" name="lname" id="lname" required>
               <label>Phone</label>
-              <input type="text" class="VENUE_one" name="Phone" id="Phone">
+              <input type="text" class="VENUE_one" name="Phone" id="Phone" required>
               <label>Email</label>
-              <input type="text" class="VENUE_one" name="Email" id="Email">
-              <a href="#">
-                <button id="submit_Information" onclick="submit()" class="submit_Information">Submit</button>
-             </a>
-            </div>
+              <input type="text" class="VENUE_one" name="Email" id="Email" required>
+              <input type="submit" id="submit_Information" class="submit_Information" value="Submit" onclick="submit_theReservation()">
+            </form>
           </div>
         </div>
     </main>

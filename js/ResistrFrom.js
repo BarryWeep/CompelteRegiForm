@@ -24,15 +24,26 @@ let Userlist = [
   
   }
 
-  function submit()
+  function submit_theReservation()
   {
-    Userlist[0].fname = document.getElementById('fname').value;
-    Userlist[0].lname = document.getElementById('lname').value;
-    Userlist[0].moblePhone = document.getElementById('Phone').value;
-    Userlist[0].Email = document.getElementById('Email').value;
-    localStorage.removeItem("sx$qwes42");
-    alert("Success!! Your Reservation has been received");
-    window.location.href = "./index.html";
+   let testOne = document.getElementById('fname');
+   let testTwo = document.getElementById('lname');
+   let testThree =document.getElementById('Phone');
+   let testfour =document.getElementById('Email');
+   
+   if(testOne&&testOne.value&&testTwo&&testTwo.value&&testThree&&testThree.value&&testfour&&testfour.valu)
+{
+			alert("Success!! Your Reservation has been received");
+		//location.href = "index.html";
+ 
+ }
+ else
+ {
+	return;
+ }
+
+
+  
 
   }
 
