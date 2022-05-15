@@ -31,19 +31,15 @@ let Userlist = [
    let testThree =document.getElementById('Phone');
    let testfour =document.getElementById('Email');
    
-   if(testOne&&testOne.value&&testTwo&&testTwo.value&&testThree&&testThree.value&&testfour&&testfour.valu)
-{
-			alert("Success!! Your Reservation has been received");
-		//location.href = "index.html";
+   if(testOne&&testOne.value&&testTwo&&testTwo.value&&testThree&&testThree.value&&testfour&&testfour.value)
+	{
+		alert("Success!! Your Reservation has been received");
  
- }
- else
- {
-	return;
- }
-
-
-  
+	}
+	else
+	{
+		return;
+	}
 
   }
 
