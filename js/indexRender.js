@@ -1,6 +1,7 @@
 //Model:
 let Userlist = [
   {
+<<<<<<< HEAD
     userID:"",  //6digital to 7 digital 123456
     fname:"", //Leane
     lname:"",//Mcdonal
@@ -12,10 +13,24 @@ let Userlist = [
     date:"",//2022-05-05
     Duration:"",//60 mins
     StartTime:"",//7:30 AM
+=======
+    userID:"",  //6digital to 7 digital
+    fname:"",
+    lname:"",
+    moblePhone:"", //format check in the control system
+    Email: "",
+    location:"", //Golfplace Inn
+    Venue:"", //Simulator One
+    Player:"",// max 4
+    date:"", //05-05-2022
+    Duration:"",//60 mins
+    StartTime:"",//8:30 AM
+>>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
     EndTime:""//8:30 AM
   }
   ];
 
+<<<<<<< HEAD
   function locationStorageAdd()
   {
     let VenueValue = document.getElementById("VENUE").value;
@@ -41,6 +56,14 @@ let Userlist = [
 
     localStorage.removeItem("sx$qwes42");
     localStorage.setItem("sx$qwes42", JSON.stringify(Userlist));
+=======
+
+  function locationStorageAdd()
+  {
+
+    window.localStorage.removeItem("sx$qwes42");
+    window.localStorage.setItem("sx$qwes42", JSON.stringify(Userlist));
+>>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
 
   }
   
@@ -75,4 +98,8 @@ function CalenderValueUpdate()
 
 
 //run
+<<<<<<< HEAD
 initalDate();
+=======
+initalDate();
+>>>>>>> 85441eddbde0ca46fa6238192ca04a49a489f97c
